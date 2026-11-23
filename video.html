@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Video introduction by Your Name">
+  <title>My Video | My Site</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">&lt;MySite&gt;</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">My Biodata</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="video.html" class="active" aria-current="page">My Video</a></li>
+        <li><a href="comments.html">Your Comments</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <section class="reveal">
+      <h2 class="section-title">My Video</h2>
+      <p class="lead">Press play to watch my short introduction.</p>
+      <div class="card video-box">
+        <video controls preload="metadata" playsinline>
+          <source src="assets/intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-info">
+          <h3>Meet Your Name</h3>
+          <p class="lead" style="margin:6px 0 0">A short video about who I am, what I study and what I hope to build. (This is a placeholder clip. Replace <code>assets/intro.mp4</code> with your own video, keeping the same file name.)</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; <span id="year">2026</span> Jericho Leon &middot; IM22503 Multimedia Web Programming &middot; Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

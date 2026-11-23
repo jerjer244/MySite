@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leave a comment and contact Your Name">
+  <title>Your Comments | My Site</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">&lt;MySite&gt;</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">My Biodata</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="video.html">My Video</a></li>
+        <li><a href="comments.html" class="active" aria-current="page">Your Comments</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <section class="reveal">
+      <h2 class="section-title">Your Comments</h2>
+      <p class="lead">I would love to hear from you. Fill in the form below and your comment will appear on this page.</p>
+      <div class="grid cols-2">
+        <form id="comment-form" class="card" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Aisha">
+            <div class="error" id="err-name" role="alert"></div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <div class="error" id="err-email" role="alert"></div>
+          </div>
+          <div class="field">
+            <label for="topic">Comment about</label>
+            <select id="topic" name="topic">
+              <option>Website design</option><option>Portfolio</option><option>Video</option><option>General feedback</option>
+            </select>
+          </div>
+          <div class="field">
+            <span id="rating-label" style="display:block;font-weight:600;margin-bottom:6px">Rating</span>
+            <div class="stars" role="radiogroup" aria-labelledby="rating-label">
+              <input type="radio" id="r5" name="rating" value="5"><label for="r5" title="5 stars">&#9733;<span class="sr" hidden>5</span></label>
+              <input type="radio" id="r4" name="rating" value="4"><label for="r4" title="4 stars">&#9733;</label>
+              <input type="radio" id="r3" name="rating" value="3"><label for="r3" title="3 stars">&#9733;</label>
+              <input type="radio" id="r2" name="rating" value="2"><label for="r2" title="2 stars">&#9733;</label>
+              <input type="radio" id="r1" name="rating" value="1"><label for="r1" title="1 star">&#9733;</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Your comment</label>
+            <textarea id="message" name="message" placeholder="Write something nice..."></textarea>
+            <div class="error" id="err-message" role="alert"></div>
+          </div>
+          <button class="btn" type="submit">Post Comment</button>
+          <p id="form-msg" class="form-msg" role="status"></p>
+        </form>
+
+        <div>
+          <div class="card" style="margin-bottom:22px">
+            <h3>Contact &amp; Social Media</h3>
+            <p class="lead" style="margin:8px 0">Prefer to reach out directly?</p>
+            <p>&#9993; <a href="mailto:jerichosleon@gmail.com">jerichosleon@gmail.com</a></p>
+            <div class="socials">
+              <a href="https://www.instagram.com/jr_jrxch/" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://github.com/jerjer244" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <h3 style="margin-bottom:12px">Latest comments</h3>
+          <div id="comment-list" aria-live="polite"></div>
+          <button class="btn ghost" id="clear-comments" type="button" style="margin-top:8px">Clear comments</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; <span id="year">2026</span> Jericho Leon &middot; IM22503 Multimedia Web Programming &middot; Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

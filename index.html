@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio homepage of Your Name">
+  <title>Home | My Site</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">&lt;MySite&gt;</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="biodata.html">My Biodata</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="video.html">My Video</a></li>
+        <li><a href="comments.html">Your Comments</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <section class="hero">
+      <div>
+        <p class="hi">Welcome to my corner of the web</p>
+        <h1>Hi, I'm</h1>
+        <h1><span class="grad">Jericho Leon</span></h1>
+        <p class="typing">I am <span id="typewriter"></span><span class="cursor" aria-hidden="true"></span></p>
+        <p class="lead" style="margin-top:14px">I am a student who loves turning ideas into interactive, good-looking web experiences. Explore my biodata, portfolio and video, then leave me a comment!</p>
+        <div class="hero-actions">
+          <a class="btn" href="portfolio.html">View My Work</a>
+          <a class="btn ghost" href="comments.html">Say Hello</a>
+        </div>
+      </div>
+      <div class="avatar-wrap">
+        <img src="assets/profile.svg" alt="Profile picture of Your Name" width="360" height="360">
+      </div>
+    </section>
+
+    <section class="reveal" aria-label="Quick facts">
+      <div class="card stats">
+        <div><div class="num" data-count="5" data-suffix="">0</div><span>Web Pages</span></div>
+        <div><div class="num" data-count="4" data-suffix="+">0</div><span>Projects Built</span></div>
+        <div><div class="num" data-count="12" data-suffix="+">0</div><span>Skills &amp; Tools</span></div>
+        <div><div class="num" data-count="100" data-suffix="%">0</div><span>Curiosity</span></div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="section-title">Explore My Site</h2>
+      <p class="lead">Five pages, one personal story.</p>
+      <div class="grid cols-3">
+        <a class="card" href="biodata.html"><h3>&#128100; My Biodata</h3><p class="lead">Who I am, my skills, interests and weekly timetable.</p></a>
+        <a class="card" href="portfolio.html"><h3>&#128188; My Portfolio</h3><p class="lead">Projects and assignments I am proud of.</p></a>
+        <a class="card" href="video.html"><h3>&#127916; My Video</h3><p class="lead">A short video introduction about me.</p></a>
+        <a class="card" href="comments.html"><h3>&#128172; Your Comments</h3><p class="lead">Leave feedback through my contact form.</p></a>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; <span id="year">2026</span> Jericho Leon &middot; IM22503 Multimedia Web Programming &middot; Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

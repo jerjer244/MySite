@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Biodata, skills, interests and timetable of Your Name">
+  <title>My Biodata | My Site</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="index.html">&lt;MySite&gt;</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html" class="active" aria-current="page">My Biodata</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="video.html">My Video</a></li>
+        <li><a href="comments.html">Your Comments</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <section class="reveal">
+      <h2 class="section-title">About Me</h2>
+      <p class="lead">Creative and ambitious student that have always grew up around technology.</p>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3 style="margin-bottom:10px">Introduction</h3>
+          <p>Hello! My name is <b>Jericho Leon</b>, a student at <b>University Malaysia Sabah Labun International Campus</b> pursuing a programme in multimedia and information technology. I enjoy designing clean user interfaces, building websites and learning how creativity and code come together. My goal is to become a front-end developer who creates experiences people love to use.</p>
+        </div>
+        <div class="card">
+          <table class="profile-table">
+            <tr><th scope="row">Full Name</th><td>Jericho Leon J. Kundahal</td></tr>
+            <tr><th scope="row">Student ID</th><td>BI24110145</td></tr>
+            <tr><th scope="row">Programme</th><td>Multimedia and Information Technology</td></tr>
+            <tr><th scope="row">Location</th><td>Sabah, Malaysia</td></tr>
+            <tr><th scope="row">Languages</th><td>English, Bahasa Malaysia, 华裔(Mandarin)</td></tr>
+            <tr><th scope="row">Email</th><td><a href="mailto:you@example.com">jerichosleon@gmail.com</a></td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="card"><div class="skill"><div class="skill-head"><span>HTML</span><span>70%</span></div><div class="bar" role="img" aria-label="HTML proficiency 70 percent"><i data-level="70"></i></div></div><div class="skill"><div class="skill-head"><span>C++</span><span>85%</span></div><div class="bar" role="img" aria-label="CSS3 &amp; Responsive Design proficiency 85 percent"><i data-level="85"></i></div></div><div class="skill"><div class="skill-head"><span>JavaScript</span><span>75%</span></div><div class="bar" role="img" aria-label="JavaScript proficiency 75 percent"><i data-level="75"></i></div></div><div class="skill"><div class="skill-head"><span>Graphic &amp; Multimedia Design</span><span>80%</span></div><div class="bar" role="img" aria-label="Graphic &amp; Multimedia Design proficiency 80 percent"><i data-level="80"></i></div></div><div class="skill"><div class="skill-head"><span>Animation</span><span>90%</span></div><div class="bar" role="img" aria-label="Animation proficiency 90 percent"><i data-level="90"></i></div></div></div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="section-title">Interests</h2>
+      <ul class="chips">
+        <li>&#127912; Digital Art</li><li>&#127918; Gaming</li><li>&#127911; Music</li>
+        <li>&#128247; Photography</li><li>&#128187; Coding</li><li>&#9917; Sports</li>
+        <li>&#9992;&#65039; Travelling</li><li>&#128214; Reading</li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <h2 class="section-title">Education &amp; Achievements</h2>
+      <div class="card">
+        <ul class="timeline">
+          <li><b>2024 - Present</b><br>Degree in Multimedia and Information Technology, UMSKAL</li>
+          <li><b>2022</b><br>Completed STPM in Kolej Tingkatan 6 Kota Kinabalu (KTEKK) with 3.47 pointers</li>
+          <li><b>2021</b><br>Completed SPM with 6As in SMK Kolombong</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="section-title">My Timetable</h2>
+      <p class="lead">My weekly class schedule, S1 Y3. <span id="today-note"></span></p>
+      <div class="table-scroll">
+        <table class="timetable">
+          <caption>Weekly timetable, Semester 1 Year 3</caption>
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col" data-day="1">Monday</th>
+              <th scope="col" data-day="2">Tuesday</th>
+              <th scope="col" data-day="3">Wednesday</th>
+              <th scope="col" data-day="4">Thursday</th>
+              <th scope="col" data-day="5">Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">8:00 - 9:00</th>
+              <td class="class" data-day="1" rowspan="2">Multimedia Web Programming (IM22503)<br><small>Dr. Nur Farah Bte Mohd Naim<br>8:00AM - 10:00AM &middot; P1G</small></td>
+              <td class="free" data-day="2">&ndash;</td>
+              <td class="class" data-day="3" rowspan="2">Computer Graphic (IM32303)<br><small>Dr. Wan Nooraishya Wan Ahmad<br>8:00AM - 10:00AM &middot; PC</small></td>
+              <td class="free" data-day="4">&ndash;</td>
+              <td class="class" data-day="5" rowspan="2">Accounting (IP00903)<br><small>Nona Masnie Mohd Nistah<br>8:00AM - 10:00AM &middot; BK1</small></td>
+            </tr>
+            <tr>
+              <th scope="row">9:00 - 10:00</th>
+              <td class="free" data-day="2">&ndash;</td>
+              <td class="lab" data-day="4" rowspan="3">Computer Graphic (IM32303) Tutorial<br><small>Dr. Wan Nooraishya Wan Ahmad<br>9:00AM - 12:00PM &middot; Games Lab</small></td>
+            </tr>
+            <tr>
+              <th scope="row">10:00 - 11:00</th>
+              <td class="free" data-day="1">&ndash;</td>
+              <td class="free" data-day="2">&ndash;</td>
+              <td class="free" data-day="3">&ndash;</td>
+              <td class="free" data-day="5">&ndash;</td>
+            </tr>
+            <tr>
+              <th scope="row">11:00 - 12:00</th>
+              <td class="free" data-day="1">&ndash;</td>
+              <td class="lab" data-day="2" rowspan="2">Augmented Reality (IT32603) Tutorial<br><small>Ryan Macdonell Andrias<br>11:00AM - 1:00PM &middot; VDI</small></td>
+              <td class="free" data-day="3">&ndash;</td>
+              <td class="free" data-day="5">&ndash;</td>
+            </tr>
+            <tr>
+              <th scope="row">12:00 - 1:00</th>
+              <td class="free" data-day="1">&ndash;</td>
+              <td class="free" data-day="3">&ndash;</td>
+              <td class="free" data-day="4">&ndash;</td>
+              <td class="free" data-day="5">&ndash;</td>
+            </tr>
+            <tr>
+              <th scope="row">1:00 - 2:00</th>
+              <td class="free" data-day="1">&ndash;</td>
+              <td class="free" data-day="2">&ndash;</td>
+              <td class="free" data-day="3">&ndash;</td>
+              <td class="free" data-day="4">&ndash;</td>
+              <td class="free" data-day="5">&ndash;</td>
+            </tr>
+            <tr>
+              <th scope="row">2:00 - 3:00</th>
+              <td class="lab" data-day="1" rowspan="2">Multimedia Web Programming (IM22503) Tutorial<br><small>Dr. Nur Farah Bte Mohd Naim<br>2:00PM - 4:00PM &middot; E-COM</small></td>
+              <td class="free" data-day="2">&ndash;</td>
+              <td class="free" data-day="3">&ndash;</td>
+              <td class="class" data-day="4" rowspan="2">Augmented Reality (IT32603)<br><small>Ryan Macdonell Andrias<br>2:00PM - 4:00PM &middot; DKP3</small></td>
+              <td class="class" data-day="5" rowspan="2">Cyber Security (IT32503)<br><small>Ainnur Hafizah Binti Anuar Mokhtar<br>2:00PM - 4:00PM &middot; DKP2</small></td>
+            </tr>
+            <tr>
+              <th scope="row">3:00 - 4:00</th>
+              <td class="free" data-day="2">&ndash;</td>
+              <td class="free" data-day="3">&ndash;</td>
+            </tr>
+            <tr>
+              <th scope="row">4:00 - 5:00</th>
+              <td class="free" data-day="1">&ndash;</td>
+              <td class="free" data-day="2">&ndash;</td>
+              <td class="free" data-day="3">&ndash;</td>
+              <td class="free" data-day="4">&ndash;</td>
+              <td class="free" data-day="5">&ndash;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="legend"><span class="l1">Lecture</span><span class="l2">Tutorial / Lab</span></div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; <span id="year">2026</span> Jericho Leon &middot; IM22503 Multimedia Web Programming &middot; Built with HTML, CSS &amp; JavaScript</p>
+  <script src="js/main.js"></script>
+</body>
+</html>
